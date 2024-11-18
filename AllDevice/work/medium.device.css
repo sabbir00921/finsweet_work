@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --fnt_primary: "Poppins", sans-serif;
+  --clr_royal_blue: #2405f2;
+  --clr_dark_blue: #282938;
+  --clr_tint_blue: #1c1e53;
+  --clr_grey: #f4f6fc;
+  --clr_yellow: #fcd980;
+  --clr_accent: #eef4fa;
+  --clr_text_faded: #282938;
+  --border-red: 1px solid red;
+  --trn_delay: ease-in 0.3s;
+  --box_shd: 0 0 20px 20px rgba(0, 0, 0, 0.24);
+}
+
+@media (max-width: 991.98px) {
+    .footerLeft {
+        width: 100%;
+    }
+    .footerRight {
+        margin-top: 150px;
+        height: fit-content;
+    }
+    /* ==================Start working from here==================== */
+    .WorkPortfolio__summary {
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .Worktempletetop__items {
+        font-size: 13px;
+    }
+    .carditemsone {
+        row-gap: 0px;
+        text-align: center;
+        align-items: center;
+    }
+
+}

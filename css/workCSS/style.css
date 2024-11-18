@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --fnt_primary: "Poppins", sans-serif;
+  --clr_royal_blue: #2405f2;
+  --clr_dark_blue: #282938;
+  --clr_tint_blue: #1c1e53;
+  --clr_grey: #f4f6fc;
+  --clr_yellow: #fcd980;
+  --clr_accent: #eef4fa;
+  --clr_text_faded: #282938;
+  --border-red: 1px solid red;
+  --trn_delay: ease-in 0.3s;
+  --box_shd: 0 0 20px 20px rgba(0, 0, 0, 0.24);
+}
+
+/* ==============common=========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: var(--fnt_primary);
+  color: var(--clr_dark_blue);
+  overflow-x: hidden;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a,
+span {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.commonLink {
+  color: white;
+}
+
+.commonLink:hover {
+  color: var(--clr_yellow);
+  transition: var(--trn_delay);
+}
+
+/* ==========Navbar=================== */
+.navbar {
+  background-color: var(--clr_tint_blue) !important;
+  color: white;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.customBtnPrimary {
+  border-radius: 41px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem 3rem;
+  transition: var(--trn_delay);
+}
+
+.customBtnPrimary:hover {
+  background-color: var(--clr_yellow) !important;
+  color: var(--clr_tint_blue) !important;
+}
+
+.--btnMod {
+  margin-left: 100px;
+}
+
+#navbar .active {
+  position: relative;
+}
+
+#navbar .active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: translateY(-7px);
+}
+
+.customNavLink {
+  position: relative;
+}
+
+.customNavLink:hover::before {
+  width: 100%;
+}
+
+.customNavLink::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transform: translateY(-7px);
+  transition: var(--trn_delay);
+}
+
+.--linkMod:hover {
+  color: var(--clr_tint_blue) !important;
+}
+
+/* =======================================YOUR WORK STARTS FROM HERE========================================= */
+/* =======================================WorkPortfolio part========================================= */
+#WorkPortfolio {
+  padding: 96px 0px;
+  margin-bottom: 96px;
+  background-color: #F4F6FC;
+}
+
+.WorkPortfolio__tag {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--clr_dark_blue);
+  opacity: .7;
+  margin-bottom: 4px;
+}
+
+.WorkPortfolio__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  color: var(--clr_dark_blue);
+  margin-bottom: 0;
+}
+
+.WorkPortfolio__summary {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  color: var(--clr_dark_blue);
+  opacity: .7;
+  margin: 24px 0px 32px 0px;
+
+}
+
+.WorkPortfolio__icon {
+  display: flex;
+  justify-content: space-around;
+}
+
+.WorkPortfolio__icon>a>i {
+  color: black;
+  transition: ease-in-out .2s;
+}
+
+.WorkPortfolio__icon>a>i:hover {
+  color: blue;
+}
+
+.Worktempletetop {
+  margin-bottom: 48px;
+}
+.CustomCard{
+  margin-bottom: 64px;
+}
+.Worktempletetop__items {
+  flex-direction: row;
+  column-gap: 32px;
+}
+.Worktempletetop__items > a{
+  color: var(--clr_dark_blue);
+  transition: ease-in-out .2s;
+}
+.Worktempletetop__items > a:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+.carditemsone {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.carditemsone__title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 56px;
+  color: black;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.carditemsone__details {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(40, 41, 56, .7);
+  margin-bottom: 10px;
+}
+
+.card__link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--clr_dark_blue)
+}
+
+/* =======================================WorkPortfolio part========================================= */
+/* =======================================Workbuild part========================================= */
+#Workbuild{
+  padding: 128px 0px;
+}
+.Workbuildcontent{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+.Workbuild__title{
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  color: var(--clr_dark_blue);
+  margin-bottom: 0;
+}
+.customBtn {
+  border-radius: 41px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem 3rem;
+  transition: ease-in-out .1s;
+  background-color: var(--clr_tint_blue) !important;
+  margin-top: 20px;
+}
+
+.customBtn:hover{
+  background-color: var(--clr_yellow) !important;
+}
+
+.customBtn:hover{
+  background-color: var(--clr_yellow) !important;
+}
+
+.customBtn:hover{
+  background-color: var(--clr_yellow) !important;
+}
+.customBtn__link{
+  color: white;
+}
+.customBtn:hover >.customBtn__link{
+  color: black;
+}
+
+/* =======================================Workbuild part========================================= */
+
+/* =================================!!! DONT MODIFY THE #FOOTER SECTION!!!========================================= */
+/* ============footer section============== */
+#footer {
+  padding-top: 128px;
+  background-color: var(--clr_tint_blue);
+  color: white;
+}
+
+#footer .logo img {
+  width: 176px;
+}
+
+.footerLeftBottom {
+  background-color: var(--clr_yellow);
+  color: var(--clr_dark_blue);
+}
+
+.footerLeft,
+.footerRight {
+  height: 300px;
+}
+
+.footerRightSocials {
+  margin-bottom: 120px;
+}
+
+.footerRightSocials a {
+  color: white;
+  transition: var(--trn_delay);
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+}
+
+.footerRightSocials a:hover {
+  color: var(--clr_yellow);
+}
+
+.footernav {
+  background-color: white !important;
+  padding: 0 !important;
+}
+
+.footernav .navbar-toggler-icon {
+  filter: invert(0);
+}
+
+.bottomNavLinks {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footernav a {
+  color: var(--clr_tint_blue) !important;
+}
+
+.footerCopyright {
+  color: var(--clr_tint_blue);
+}
